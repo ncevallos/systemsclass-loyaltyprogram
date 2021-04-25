@@ -1,29 +1,29 @@
-package edu.fiu.ncevallosLab1;
+package edu.fiu.loyaltyprogram;
 
+import java.util.Date;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
 import edu.fiu.sysdesign.SelfCheckUtils;
 
-public class MOXIE implements SelfCheckCapable {
+public class Benefits implements SelfCheckCapable {
+	
+	/*
+	 * The premise of the Benefits class is that 
+	 * we can choose to provide different benefits
+	 * and/or more then one benefit to a status tier
+	 */
+	
+	String name;
+	String amount;
+	Boolean active;
+	Date startDate;
+	Date endDate;
+	
 
-	/**
-	 * begins the process to create oxygen
-	 */
-	void createOxygen() {
-		
-	}
-	
-	/**
-	 * Returns data back to the rover body
-	 */
-	void returnData() {
-		
-	}
-	
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "MOXIE system";
+		return "Benefits system";
 	}
 
 	@Override
@@ -37,5 +37,4 @@ public class MOXIE implements SelfCheckCapable {
 		// TODO Auto-generated method stub
 		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
-
 }

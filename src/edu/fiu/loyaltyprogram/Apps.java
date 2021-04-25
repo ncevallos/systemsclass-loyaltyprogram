@@ -1,27 +1,18 @@
-package edu.fiu.ncevallosLab1;
+package edu.fiu.loyaltyprogram;
 
 import edu.fiu.sysdesign.SelfCheckUtils;
 
 
-public class SuperCam extends Camera {
-	/**
-	* Identify the chemical composition of whatever it points the camera at
-	*/
-	void identifyComposition() {
-			
-	}
-
-	/**
-	* measure the air quality and what the current makeup of the air is
-	*/
-	void measureAir() {
-			
-	}
+public class Apps extends Goods {
+	/*
+	 * This class is for appetizers which are an extension of goods
+	 */
 	
+
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "Super Cam system";
+		return "Apps class";
 	}
 
 	@Override

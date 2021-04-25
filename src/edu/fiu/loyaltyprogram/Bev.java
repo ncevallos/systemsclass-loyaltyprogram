@@ -1,31 +1,17 @@
-package edu.fiu.ncevallosLab1;
+package edu.fiu.loyaltyprogram;
 
-import edu.fiu.sysdesign.SelfCheckCapable;
 import edu.fiu.sysdesign.SelfCheckUtils;
 
 
-public class RIMFAX implements SelfCheckCapable {
-	String radar;
+public class Bev extends Goods {
+	/*
+	 * This class is for beverages which are an extension of goods
+	 */
 	
-	/**
-	 * Scan underneath the surface of the ground
-	 */
-	 void scanSubsurface() {
-				 
-		 
-	 }
-	 /**returns the data back to the main computer
-	 */
-	 void returnData() {
-					 
-			 
-	}
-
-
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "RIMFAX system";
+		return "Beverages class";
 	}
 
 	@Override
@@ -39,5 +25,4 @@ public class RIMFAX implements SelfCheckCapable {
 		// TODO Auto-generated method stub
 		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
-
 }

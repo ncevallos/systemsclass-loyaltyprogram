@@ -1,52 +1,48 @@
-package edu.fiu.ncevallosLab1;
+package edu.fiu.loyaltyprogram;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
 import edu.fiu.sysdesign.SelfCheckUtils;
 
 
-public class Camera implements SelfCheckCapable {
-
+public class Wallet implements SelfCheckCapable {
+	
+	Integer pointsBalance = 9000;
 	
 	/**
-	 * moves the wheel forward
+	 *return points balance
 	 */
-	 void takeSnapshot() {
-				 
+	 public Integer getPoints() {
+		return pointsBalance;
 		 
 	 }
 	 /**
-	 * moves the wheel reverse
+	 * increases Points Balance
 	 */
-	 void startCamera() {
+	 void increasePoints( int amount) {
+		 pointsBalance =+ amount;
 					 
 			 
 	}
-	 
 	 /**
-	 * moves the wheel reverse
+	 * decreases Points Balance
 	 */
-	 void endCamera() {
+	 void decreasePoints( int amount) {
+		 pointsBalance =- amount;
 					 
 			 
 	}
 
-	/**
-	* Returns data back to the rover body
-	*/
-	void returnData() {
-			
-	}
 
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "General Camera system";
+		return "Wallet system";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.25);
+		return SelfCheckUtils.randomCheck(0);
 	}
 
 	@Override

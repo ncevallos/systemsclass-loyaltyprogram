@@ -1,19 +1,19 @@
-package edu.fiu.ncevallosLab1;
+package edu.fiu.loyaltyprogram;
 
 import edu.fiu.sysdesign.SelfCheckUtils;
 
-public class OuterWheels extends Wheels {
-
-	 /**
-	 * turns the wheels
+public class Dishes extends Goods {
+	/*
+	 * This class is for dishes which are an extension of goods
+	 * and designed as main entree type dishes
 	 */
-	void Steer() {
-		
-	}
+	
+
+
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "Outer Wheels system";
+		return "Dishes class";
 	}
 
 	@Override
